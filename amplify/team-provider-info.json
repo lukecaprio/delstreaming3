@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-delmestream-staging-175932-authRole",
+      "UnauthRoleArn": "arn:aws:iam::373215252856:role/amplify-delmestream-staging-175932-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::373215252856:role/amplify-delmestream-staging-175932-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-delmestream-staging-175932-deployment",
+      "UnauthRoleName": "amplify-delmestream-staging-175932-unauthRole",
+      "StackName": "amplify-delmestream-staging-175932",
+      "StackId": "arn:aws:cloudformation:us-east-1:373215252856:stack/amplify-delmestream-staging-175932/d2aa9030-aec0-11ec-8c80-0ea9debfa557",
+      "AmplifyAppId": "d2kpsbj5qbx5dw"
+    }
+  }
+}

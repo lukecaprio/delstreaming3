@@ -1,13 +1,18 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { 
+  StreamingTHREE 
+} from './ui-components';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <StreamingTHREE />
   </React.StrictMode>,
+  
   document.getElementById('root')
 );
 
