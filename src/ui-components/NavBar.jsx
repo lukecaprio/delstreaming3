@@ -16,7 +16,7 @@ import {
   View,
 } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
-  const { overrides, ...rest } = props;
+  const { streaming, overrides, ...rest } = props;
   return (
     <Flex
       gap="20px"
@@ -41,6 +41,7 @@ export default function NavBar(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
+        display="none"
         {...getOverrideProps(overrides, "Logo")}
       >
         <Icon
@@ -66,7 +67,7 @@ export default function NavBar(props) {
           textTransform="capitalize"
           lineHeight="23.4375px"
           textAlign="left"
-          display="flex"
+          display="Streams"
           direction="column"
           justifyContent="flex-start"
           shrink="0"
@@ -104,7 +105,7 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Dashboard"
+          children="Home"
           {...getOverrideProps(overrides, "Dashboard")}
         ></Text>
         <Text
@@ -122,7 +123,7 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Jobs"
+          children="Streams"
           {...getOverrideProps(overrides, "Jobs")}
         ></Text>
         <Text
@@ -140,7 +141,7 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Applicants"
+          children="Topster"
           {...getOverrideProps(overrides, "Applicants")}
         ></Text>
         <Text
@@ -158,7 +159,7 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Company"
+          children="Reports"
           {...getOverrideProps(overrides, "Company")}
         ></Text>
       </Flex>
@@ -226,6 +227,7 @@ export default function NavBar(props) {
           position="relative"
           borderRadius="160px"
           padding="0px 0px 0px 0px"
+          src={streaming?.ArtistPic}
           {...getOverrideProps(overrides, "image")}
         ></Image>
       </Flex>

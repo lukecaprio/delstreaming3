@@ -11,9 +11,9 @@ import {
   getOverrideProps,
   useDataStoreBinding,
 } from "@aws-amplify/ui-react/internal";
-import CardA from "./CardA";
+import NavBar from "./NavBar";
 import { Collection } from "@aws-amplify/ui-react";
-export default function Streamingtwo(props) {
+export default function NavBarTest(props) {
   const { items: itemsProp, overrideItems, overrides, ...rest } = props;
   const items =
     itemsProp !== undefined
@@ -25,20 +25,22 @@ export default function Streamingtwo(props) {
   return (
     <Collection
       type="list"
+      isPaginated={true}
       searchPlaceholder="Search..."
+      itemsPerPage={1}
       direction="column"
       alignItems="stretch"
       justifyContent="left"
       items={items || []}
       {...rest}
-      {...getOverrideProps(overrides, "Streamingtwo")}
+      {...getOverrideProps(overrides, "NavBarTest")}
     >
       {(item, index) => (
-        <CardA
-          Streams={item}
+        <NavBar
+          streaming={item}
           key={item.id}
           {...(overrideItems && overrideItems({ item, index }))}
-        ></CardA>
+        ></NavBar>
       )}
     </Collection>
   );

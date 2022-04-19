@@ -19,7 +19,7 @@ import {
 } from "@aws-amplify/ui-react";
 import MyIcon from "./MyIcon";
 export default function CardF(props) {
-  const { overrides, ...rest } = props;
+  const { streaming, overrides, ...rest } = props;
   return (
     <Flex
       gap="0"
@@ -38,6 +38,7 @@ export default function CardF(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
+        src={streaming?.ArtistPic}
         {...getOverrideProps(overrides, "image")}
       ></Image>
       <Flex
@@ -68,7 +69,7 @@ export default function CardF(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Classic Long Sleeve T-Shirt"
+          children={streaming?.Song}
           {...getOverrideProps(overrides, "Classic Long Sleeve T-Shirt")}
         ></Text>
         <Flex
@@ -79,6 +80,7 @@ export default function CardF(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
+          display="none"
           {...getOverrideProps(overrides, "Ratings")}
         >
           <Rating
@@ -122,6 +124,7 @@ export default function CardF(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
+          display="none"
           {...getOverrideProps(overrides, "Tags")}
         >
           <Badge
@@ -214,7 +217,9 @@ export default function CardF(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Information about this product."
+          children={`${"You have "}${
+            streaming?.StreamingCount
+          }${" streams on this song"}`}
           {...getOverrideProps(overrides, "Information about this product.")}
         ></Text>
         <Flex
@@ -236,6 +241,7 @@ export default function CardF(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             type="chat"
+            display="none"
             {...getOverrideProps(overrides, "MyIcon")}
           ></MyIcon>
           <Text
@@ -255,7 +261,7 @@ export default function CardF(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="“This is a quote.“"
+            children={streaming?.Artist}
             {...getOverrideProps(overrides, "\u201CThis is a quote.\u201C")}
           ></Text>
         </Flex>
@@ -278,6 +284,7 @@ export default function CardF(props) {
           shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
+          display="none"
           {...getOverrideProps(overrides, "Features")}
         >
           <Flex

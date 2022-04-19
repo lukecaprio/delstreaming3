@@ -5,12 +5,12 @@
  **************************************************************************/
 
 import React from "react";
-import { Streaming } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
+import { Streaming } from "../models";
 import { FlexProps } from "@aws-amplify/ui-react";
-export declare type NavBarProps = React.PropsWithChildren<Partial<FlexProps> & {
-    streaming?: Streaming;
+export declare type Streaming4Props = React.PropsWithChildren<Partial<FlexProps> & {
+    streaming4?: Streaming;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function NavBar(props: NavBarProps): React.ReactElement;
+export default function Streaming4(props: Streaming4Props): React.ReactElement;

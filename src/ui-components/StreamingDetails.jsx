@@ -11,9 +11,9 @@ import {
   getOverrideProps,
   useDataStoreBinding,
 } from "@aws-amplify/ui-react/internal";
-import CardA from "./CardA";
+import CardF from "./CardF";
 import { Collection } from "@aws-amplify/ui-react";
-export default function Streamingtwo(props) {
+export default function StreamingDetails(props) {
   const { items: itemsProp, overrideItems, overrides, ...rest } = props;
   const items =
     itemsProp !== undefined
@@ -25,20 +25,18 @@ export default function Streamingtwo(props) {
   return (
     <Collection
       type="list"
-      searchPlaceholder="Search..."
       direction="column"
-      alignItems="stretch"
-      justifyContent="left"
+      justifyContent="stretch"
       items={items || []}
       {...rest}
-      {...getOverrideProps(overrides, "Streamingtwo")}
+      {...getOverrideProps(overrides, "StreamingDetails")}
     >
       {(item, index) => (
-        <CardA
-          Streams={item}
+        <CardF
+          streaming={item}
           key={item.id}
           {...(overrideItems && overrideItems({ item, index }))}
-        ></CardA>
+        ></CardF>
       )}
     </Collection>
   );

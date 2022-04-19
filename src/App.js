@@ -1,26 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-import { StreamingTHREE } from './ui-components';
-import Amplify from 'aws-amplify';
-import "@aws-amplify/ui-react/styles.css";
-import {AmplifyProvider} from "@aws-amplify/ui-react";
-import awsconfig from './aws-exports';
-Amplify.configure(awsconfig);
+import React, { Component } from 'react'
+import {NavBar} from "./ui-components";
+import Streams from './Streams'
+import { Routes, Route } from 'react-router-dom'
+import Details from './Details'
+import AddStream from './AddStream'
+import {Flex } from '@aws-amplify/ui-react';
 
-function App() {
-  return (
-    <AmplifyProvider>
-    <div className="App">
-      <h1>StreamingTHREE</h1>
+class App extends Component {
+  render() {
+    return (
+      <div className='App'>
 
-        <p>
-          <StreamingTHREE/>
-        </p>
-    </div>
-    </AmplifyProvider>
-  );
+      <Routes>
+            <Route exact path='/' element={<div><NavBar/><Streams/></div>} />
+            <Route exact path='/add' element={<AddStream/>} />
+            <Route exact path='/Streams' element={<Streams/>} />
+            <Route exact path='/details' element={<Details/>} />
+          </Routes>
+
+      </div>
+  
+    )
+  } 
+ 
   
 }
 
-
-export default App;
+export default App

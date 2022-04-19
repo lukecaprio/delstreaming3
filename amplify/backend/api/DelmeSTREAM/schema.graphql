@@ -1,0 +1,8 @@
+type Streaming @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Artist: String
+  Song: String
+  StreamingCount: Int
+  ArtistPic: String
+}
+ 
