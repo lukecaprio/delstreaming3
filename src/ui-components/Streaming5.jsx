@@ -6,17 +6,46 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useDataStoreCreateAction,
+  useStateMutationAction,
+} from "@aws-amplify/ui-react/internal";
+import { Streaming } from "../models";
 import {
   Button,
   Divider,
   Flex,
+  StepperField,
   Text,
   TextField,
   View,
 } from "@aws-amplify/ui-react";
-export default function CreateStream(props) {
-  const { Enterstream, overrides, ...rest } = props;
+export default function Streaming5(props) {
+  const { streaming, overrides, ...rest } = props;
+  const [
+    textFieldThreeZeroNineFiveThreeOneNineSevenValue,
+    setTextFieldThreeZeroNineFiveThreeOneNineSevenValue,
+  ] = useStateMutationAction("");
+  const [
+    textFieldThreeZeroNineFiveThreeOneNineSixValue,
+    setTextFieldThreeZeroNineFiveThreeOneNineSixValue,
+  ] = useStateMutationAction("");
+  const [stepperFieldValue, setStepperFieldValue] =
+    useStateMutationAction(undefined);
+  const [
+    textFieldThreeZeroNineFiveThreeOneNineNineValue,
+    setTextFieldThreeZeroNineFiveThreeOneNineNineValue,
+  ] = useStateMutationAction("");
+  const buttonOnClick = useDataStoreCreateAction({
+    fields: {
+      Artist: textFieldThreeZeroNineFiveThreeOneNineSevenValue,
+      Song: textFieldThreeZeroNineFiveThreeOneNineSixValue,
+      StreamingCount: stepperFieldValue,
+      ArtistPic: textFieldThreeZeroNineFiveThreeOneNineNineValue,
+    },
+    model: Streaming,
+  });
   return (
     <Flex
       gap="16px"
@@ -26,7 +55,7 @@ export default function CreateStream(props) {
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
       {...rest}
-      {...getOverrideProps(overrides, "CreateStream")}
+      {...getOverrideProps(overrides, "Streaming5")}
     >
       <Flex
         gap="24px"
@@ -56,7 +85,7 @@ export default function CreateStream(props) {
             color="rgba(13,26,38,1)"
             lineHeight="20px"
             textAlign="left"
-            display="none"
+            display="flex"
             direction="column"
             justifyContent="flex-start"
             width="246px"
@@ -87,7 +116,18 @@ export default function CreateStream(props) {
           padding="0px 0px 0px 0px"
           size="small"
           orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider29766917")}
+          {...getOverrideProps(overrides, "Divider30953190")}
+        ></Divider>
+        <Divider
+          height="1px"
+          shrink="0"
+          alignSelf="stretch"
+          objectFit="cover"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          size="small"
+          orientation="horizontal"
+          {...getOverrideProps(overrides, "Divider30953194")}
         ></Divider>
         <Flex
           gap="16px"
@@ -110,12 +150,18 @@ export default function CreateStream(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             label="Song Title"
-            placeholder="John Doe"
+            placeholder={streaming?.Song}
             size="default"
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField29766922")}
+            value={textFieldThreeZeroNineFiveThreeOneNineSixValue}
+            onChange={(event) => {
+              setTextFieldThreeZeroNineFiveThreeOneNineSixValue(
+                event.target.value
+              );
+            }}
+            {...getOverrideProps(overrides, "TextField30953196")}
           ></TextField>
           <TextField
             display="flex"
@@ -128,15 +174,61 @@ export default function CreateStream(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             label="Artist Name"
-            placeholder="Seattle, WA"
+            placeholder={streaming?.Artist}
             size="default"
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField29766923")}
+            value={textFieldThreeZeroNineFiveThreeOneNineSevenValue}
+            onChange={(event) => {
+              setTextFieldThreeZeroNineFiveThreeOneNineSevenValue(
+                event.target.value
+              );
+            }}
+            {...getOverrideProps(overrides, "TextField30953197")}
           ></TextField>
+          <StepperField
+            display="flex"
+            gap="8px"
+            direction="column"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            label="Streaming Count"
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            value={stepperFieldValue}
+            onStepChange={(value) => setStepperFieldValue(value)}
+            {...getOverrideProps(overrides, "StepperField")}
+          ></StepperField>
           <TextField
             display="flex"
+            gap="8px"
+            direction="column"
+            justifyContent="center"
+            shrink="0"
+            alignSelf="stretch"
+            objectFit="cover"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            label="Artist Picture"
+            placeholder="www.url.com"
+            size="default"
+            isDisabled={false}
+            labelHidden={false}
+            variation="default"
+            value={textFieldThreeZeroNineFiveThreeOneNineNineValue}
+            onChange={(event) => {
+              setTextFieldThreeZeroNineFiveThreeOneNineNineValue(
+                event.target.value
+              );
+            }}
+            {...getOverrideProps(overrides, "TextField30953199")}
+          ></TextField>
+          <TextField
+            display="none"
             gap="8px"
             direction="column"
             justifyContent="center"
@@ -150,37 +242,9 @@ export default function CreateStream(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField29766924")}
-          ></TextField>
-          <TextField
-            display="flex"
-            gap="8px"
-            direction="column"
-            justifyContent="center"
-            shrink="0"
-            alignSelf="stretch"
-            objectFit="cover"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            placeholder="john.doe@awsamplify.com"
-            size="default"
-            isDisabled={false}
-            labelHidden={false}
-            variation="default"
-            {...getOverrideProps(overrides, "TextField30782737")}
+            {...getOverrideProps(overrides, "TextField30953200")}
           ></TextField>
         </Flex>
-        <Divider
-          height="1px"
-          shrink="0"
-          alignSelf="stretch"
-          objectFit="cover"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          size="small"
-          orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider29766925")}
-        ></Divider>
         <Button
           display="flex"
           gap="0"
@@ -194,6 +258,9 @@ export default function CreateStream(props) {
           isDisabled={false}
           variation="primary"
           children="Create"
+          onClick={() => {
+            buttonOnClick();
+          }}
           {...getOverrideProps(overrides, "Button")}
         ></Button>
       </Flex>

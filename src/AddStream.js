@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-
+import {NavBar} from "./ui-components";
 import logo from './logo.svg';
 import './App.css';
-import { Streaming4 } from './ui-components';
+import { Streaming5 } from './ui-components';
 import Amplify from 'aws-amplify';
 import "@aws-amplify/ui-react/styles.css";
 import {AmplifyProvider} from "@aws-amplify/ui-react";
@@ -15,9 +15,10 @@ class Streams extends Component {
         return (
           <AmplifyProvider>
           <div className="App">
-      
+          
               <p>
-                <Streaming4/>
+              <NavBar/>
+                <Streaming5/>
               </p>
           </div>
           </AmplifyProvider>

@@ -6,11 +6,14 @@
 
 import React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { Streaming } from "../models";
-import { FlexProps } from "@aws-amplify/ui-react";
-export declare type NavBarProps = React.PropsWithChildren<Partial<FlexProps> & {
-    streaming?: Streaming;
+import { CollectionProps } from "@aws-amplify/ui-react";
+export declare type EditCardsProps = React.PropsWithChildren<Partial<CollectionProps<any>> & {
+    items?: any[];
+    overrideItems?: ({ item: any, index: number }: {
+        item: any;
+        index: any;
+    }) => EscapeHatchProps;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function NavBar(props: NavBarProps): React.ReactElement;
+export default function EditCards(props: EditCardsProps): React.ReactElement;

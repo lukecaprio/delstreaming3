@@ -33,7 +33,7 @@ export default function Features2x3(props) {
         objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 136")}
+        {...getOverrideProps(overrides, "Frame 13629766636")}
       >
         <Flex
           gap="24px"
@@ -44,7 +44,7 @@ export default function Features2x3(props) {
           height="507px"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 136qnu")}
+          {...getOverrideProps(overrides, "Frame 13629766637")}
         >
           <Flex
             gap="0"
@@ -55,7 +55,7 @@ export default function Features2x3(props) {
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
-            {...getOverrideProps(overrides, "Frame 384ztz")}
+            {...getOverrideProps(overrides, "Frame 38429766638")}
           >
             <Flex
               gap="24px"
@@ -66,7 +66,7 @@ export default function Features2x3(props) {
               objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame 381kqr")}
+              {...getOverrideProps(overrides, "Frame 38129766639")}
             >
               <View
                 width="40px"
@@ -76,7 +76,7 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                {...getOverrideProps(overrides, "Iconaur")}
+                {...getOverrideProps(overrides, "Icon29766640")}
               >
                 <Icon
                   width="30px"
@@ -94,7 +94,7 @@ export default function Features2x3(props) {
                   bottom="12.5%"
                   left="12.5%"
                   right="12.5%"
-                  {...getOverrideProps(overrides, "Vectorrmq")}
+                  {...getOverrideProps(overrides, "Vector29766641")}
                 ></Icon>
               </View>
               <Flex
@@ -107,7 +107,7 @@ export default function Features2x3(props) {
                 height="105px"
                 position="relative"
                 padding="0px 0px 0px 0px"
-                {...getOverrideProps(overrides, "Frame 380eto")}
+                {...getOverrideProps(overrides, "Frame 38029766642")}
               >
                 <Text
                   fontFamily="Inter"
@@ -148,7 +148,7 @@ export default function Features2x3(props) {
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.sld"
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.29766644"
                   )}
                 ></Text>
               </Flex>
@@ -163,7 +163,7 @@ export default function Features2x3(props) {
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
-            {...getOverrideProps(overrides, "Frame 385wmz")}
+            {...getOverrideProps(overrides, "Frame 38529766645")}
           >
             <Flex
               gap="24px"
@@ -174,7 +174,7 @@ export default function Features2x3(props) {
               objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame 381fuj")}
+              {...getOverrideProps(overrides, "Frame 38129766646")}
             >
               <View
                 width="40px"
@@ -184,7 +184,7 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                {...getOverrideProps(overrides, "Iconima")}
+                {...getOverrideProps(overrides, "Icon29766647")}
               >
                 <Icon
                   width="30px"
@@ -202,7 +202,7 @@ export default function Features2x3(props) {
                   bottom="12.5%"
                   left="12.5%"
                   right="12.5%"
-                  {...getOverrideProps(overrides, "Vectorvie")}
+                  {...getOverrideProps(overrides, "Vector29766648")}
                 ></Icon>
               </View>
               <Flex
@@ -215,7 +215,7 @@ export default function Features2x3(props) {
                 height="105px"
                 position="relative"
                 padding="0px 0px 0px 0px"
-                {...getOverrideProps(overrides, "Frame 380wfo")}
+                {...getOverrideProps(overrides, "Frame 38029766649")}
               >
                 <Text
                   fontFamily="Inter"
@@ -256,7 +256,7 @@ export default function Features2x3(props) {
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.tsq"
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.29766651"
                   )}
                 ></Text>
               </Flex>
@@ -271,7 +271,7 @@ export default function Features2x3(props) {
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
-            {...getOverrideProps(overrides, "Frame 386xzo")}
+            {...getOverrideProps(overrides, "Frame 38629766652")}
           >
             <Flex
               gap="24px"
@@ -282,7 +282,7 @@ export default function Features2x3(props) {
               objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame 381xba")}
+              {...getOverrideProps(overrides, "Frame 38129766653")}
             >
               <View
                 width="40px"
@@ -292,7 +292,7 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                {...getOverrideProps(overrides, "Iconkfg")}
+                {...getOverrideProps(overrides, "Icon29766654")}
               >
                 <Icon
                   width="30px"
@@ -310,7 +310,7 @@ export default function Features2x3(props) {
                   bottom="12.5%"
                   left="12.5%"
                   right="12.5%"
-                  {...getOverrideProps(overrides, "Vectorfxs")}
+                  {...getOverrideProps(overrides, "Vector29766655")}
                 ></Icon>
               </View>
               <Flex
@@ -323,7 +323,7 @@ export default function Features2x3(props) {
                 height="105px"
                 position="relative"
                 padding="0px 0px 0px 0px"
-                {...getOverrideProps(overrides, "Frame 380xvk")}
+                {...getOverrideProps(overrides, "Frame 38029766656")}
               >
                 <Text
                   fontFamily="Inter"
@@ -364,7 +364,7 @@ export default function Features2x3(props) {
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.qvb"
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.29766658"
                   )}
                 ></Text>
               </Flex>
@@ -391,7 +391,7 @@ export default function Features2x3(props) {
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
-            {...getOverrideProps(overrides, "Frame 384ill")}
+            {...getOverrideProps(overrides, "Frame 38429766660")}
           >
             <Flex
               gap="24px"
@@ -402,7 +402,7 @@ export default function Features2x3(props) {
               objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame 381nde")}
+              {...getOverrideProps(overrides, "Frame 38129766661")}
             >
               <View
                 width="40px"
@@ -412,7 +412,7 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                {...getOverrideProps(overrides, "Iconnqd")}
+                {...getOverrideProps(overrides, "Icon29766662")}
               >
                 <Icon
                   width="30px"
@@ -430,7 +430,7 @@ export default function Features2x3(props) {
                   bottom="12.5%"
                   left="12.5%"
                   right="12.5%"
-                  {...getOverrideProps(overrides, "Vectorson")}
+                  {...getOverrideProps(overrides, "Vector29766663")}
                 ></Icon>
               </View>
               <Flex
@@ -443,7 +443,7 @@ export default function Features2x3(props) {
                 height="105px"
                 position="relative"
                 padding="0px 0px 0px 0px"
-                {...getOverrideProps(overrides, "Frame 380rwa")}
+                {...getOverrideProps(overrides, "Frame 38029766664")}
               >
                 <Text
                   fontFamily="Inter"
@@ -484,7 +484,7 @@ export default function Features2x3(props) {
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.iyo"
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.29766666"
                   )}
                 ></Text>
               </Flex>
@@ -499,7 +499,7 @@ export default function Features2x3(props) {
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
-            {...getOverrideProps(overrides, "Frame 385eel")}
+            {...getOverrideProps(overrides, "Frame 38529766667")}
           >
             <Flex
               gap="24px"
@@ -510,7 +510,7 @@ export default function Features2x3(props) {
               objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame 381vug")}
+              {...getOverrideProps(overrides, "Frame 38129766668")}
             >
               <View
                 width="40px"
@@ -520,7 +520,7 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                {...getOverrideProps(overrides, "Icondnt")}
+                {...getOverrideProps(overrides, "Icon29766669")}
               >
                 <Icon
                   width="30px"
@@ -538,7 +538,7 @@ export default function Features2x3(props) {
                   bottom="12.5%"
                   left="12.5%"
                   right="12.5%"
-                  {...getOverrideProps(overrides, "Vectoreaf")}
+                  {...getOverrideProps(overrides, "Vector29766670")}
                 ></Icon>
               </View>
               <Flex
@@ -551,7 +551,7 @@ export default function Features2x3(props) {
                 height="105px"
                 position="relative"
                 padding="0px 0px 0px 0px"
-                {...getOverrideProps(overrides, "Frame 380lwi")}
+                {...getOverrideProps(overrides, "Frame 38029766671")}
               >
                 <Text
                   fontFamily="Inter"
@@ -592,7 +592,7 @@ export default function Features2x3(props) {
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.dpp"
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.29766673"
                   )}
                 ></Text>
               </Flex>
@@ -607,7 +607,7 @@ export default function Features2x3(props) {
             position="relative"
             padding="24px 24px 24px 24px"
             backgroundColor="rgba(0,0,0,1)"
-            {...getOverrideProps(overrides, "Frame 386itg")}
+            {...getOverrideProps(overrides, "Frame 38629766674")}
           >
             <Flex
               gap="24px"
@@ -618,7 +618,7 @@ export default function Features2x3(props) {
               objectFit="cover"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Frame 381alh")}
+              {...getOverrideProps(overrides, "Frame 38129766675")}
             >
               <View
                 width="40px"
@@ -628,7 +628,7 @@ export default function Features2x3(props) {
                 position="relative"
                 padding="0px 0px 0px 0px"
                 backgroundColor="rgba(0,0,0,1)"
-                {...getOverrideProps(overrides, "Iconnke")}
+                {...getOverrideProps(overrides, "Icon29766676")}
               >
                 <Icon
                   width="30px"
@@ -646,7 +646,7 @@ export default function Features2x3(props) {
                   bottom="12.5%"
                   left="12.5%"
                   right="12.5%"
-                  {...getOverrideProps(overrides, "Vectornoj")}
+                  {...getOverrideProps(overrides, "Vector29766677")}
                 ></Icon>
               </View>
               <Flex
@@ -659,7 +659,7 @@ export default function Features2x3(props) {
                 height="105px"
                 position="relative"
                 padding="0px 0px 0px 0px"
-                {...getOverrideProps(overrides, "Frame 380vgq")}
+                {...getOverrideProps(overrides, "Frame 38029766678")}
               >
                 <Text
                   fontFamily="Inter"
@@ -700,7 +700,7 @@ export default function Features2x3(props) {
                   children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
                   {...getOverrideProps(
                     overrides,
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.dnv"
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.29766680"
                   )}
                 ></Text>
               </Flex>

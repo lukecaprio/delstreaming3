@@ -6,7 +6,10 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import {
   Flex,
   Icon,
@@ -17,6 +20,9 @@ import {
 } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
   const { streaming, overrides, ...rest } = props;
+  const dashboardOnClick = useNavigateAction({ type: "url", url: "/" });
+  const jobsOnClick = useNavigateAction({ type: "url", url: "/add" });
+  const companyOnClick = useNavigateAction({ type: "url", url: "details" });
   return (
     <Flex
       gap="20px"
@@ -42,7 +48,7 @@ export default function NavBar(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         display="none"
-        {...getOverrideProps(overrides, "Logo")}
+        {...getOverrideProps(overrides, "Logo29767073")}
       >
         <Icon
           width="18px"
@@ -75,7 +81,7 @@ export default function NavBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Logo"
-          {...getOverrideProps(overrides, "Logobib")}
+          {...getOverrideProps(overrides, "Logo29767075")}
         ></Text>
       </Flex>
       <Flex
@@ -88,7 +94,7 @@ export default function NavBar(props) {
         height="24px"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 321kvv")}
+        {...getOverrideProps(overrides, "Frame 32129767076")}
       >
         <Text
           fontFamily="Inter"
@@ -106,6 +112,9 @@ export default function NavBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Home"
+          onClick={() => {
+            dashboardOnClick();
+          }}
           {...getOverrideProps(overrides, "Dashboard")}
         ></Text>
         <Text
@@ -123,7 +132,10 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Streams"
+          children="Add Streams"
+          onClick={() => {
+            jobsOnClick();
+          }}
           {...getOverrideProps(overrides, "Jobs")}
         ></Text>
         <Text
@@ -160,6 +172,9 @@ export default function NavBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Reports"
+          onClick={() => {
+            companyOnClick();
+          }}
           {...getOverrideProps(overrides, "Company")}
         ></Text>
       </Flex>
@@ -174,7 +189,7 @@ export default function NavBar(props) {
         height="45px"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 321wes")}
+        {...getOverrideProps(overrides, "Frame 32129767081")}
       >
         <SearchField
           display="flex"

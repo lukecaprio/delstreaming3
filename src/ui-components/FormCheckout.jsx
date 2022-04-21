@@ -69,7 +69,7 @@ export default function FormCheckout(props) {
               right="78.02%"
               width="21.98%"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "imagetbu")}
+              {...getOverrideProps(overrides, "image29767033")}
             ></Image>
             <Text
               fontFamily="Inter"
@@ -89,7 +89,7 @@ export default function FormCheckout(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Order Summary"
-              {...getOverrideProps(overrides, "Order Summaryvdj")}
+              {...getOverrideProps(overrides, "Order Summary29767034")}
             ></Text>
             <Text
               fontFamily="Inter"
@@ -110,7 +110,7 @@ export default function FormCheckout(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Black"
-              {...getOverrideProps(overrides, "Blacksaf")}
+              {...getOverrideProps(overrides, "Black29767035")}
             ></Text>
             <Text
               fontFamily="Inter"
@@ -131,7 +131,7 @@ export default function FormCheckout(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Basic Tee"
-              {...getOverrideProps(overrides, "Basic Teelhe")}
+              {...getOverrideProps(overrides, "Basic Tee29767036")}
             ></Text>
             <Text
               fontFamily="Inter"
@@ -152,7 +152,7 @@ export default function FormCheckout(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Large"
-              {...getOverrideProps(overrides, "Largelix")}
+              {...getOverrideProps(overrides, "Large29767037")}
             ></Text>
             <MyIcon
               position="absolute"
@@ -163,7 +163,7 @@ export default function FormCheckout(props) {
               overflow="hidden"
               padding="0px 0px 0px 0px"
               type="delete"
-              {...getOverrideProps(overrides, "MyIconsrq")}
+              {...getOverrideProps(overrides, "MyIcon29767038")}
             ></MyIcon>
             <SelectField
               display="flex"
@@ -182,7 +182,7 @@ export default function FormCheckout(props) {
               isDisabled={false}
               labelHidden={true}
               variation="default"
-              {...getOverrideProps(overrides, "SelectFieldpxw")}
+              {...getOverrideProps(overrides, "SelectField29767039")}
             ></SelectField>
           </View>
           <Divider
@@ -194,7 +194,7 @@ export default function FormCheckout(props) {
             padding="0px 0px 0px 0px"
             size="small"
             orientation="horizontal"
-            {...getOverrideProps(overrides, "Dividergpr")}
+            {...getOverrideProps(overrides, "Divider29767040")}
           ></Divider>
           <Divider
             position="absolute"
@@ -205,7 +205,7 @@ export default function FormCheckout(props) {
             padding="0px 0px 0px 0px"
             size="small"
             orientation="horizontal"
-            {...getOverrideProps(overrides, "Dividerjgq")}
+            {...getOverrideProps(overrides, "Divider29767041")}
           ></Divider>
           <Divider
             position="absolute"
@@ -216,7 +216,7 @@ export default function FormCheckout(props) {
             padding="0px 0px 0px 0px"
             size="small"
             orientation="horizontal"
-            {...getOverrideProps(overrides, "Divideracf")}
+            {...getOverrideProps(overrides, "Divider29767042")}
           ></Divider>
           <View
             padding="0px 0px 0px 0px"
@@ -236,7 +236,7 @@ export default function FormCheckout(props) {
               right="78.02%"
               width="21.98%"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "imagewqu")}
+              {...getOverrideProps(overrides, "image29767044")}
             ></Image>
             <Text
               fontFamily="Inter"
@@ -256,7 +256,7 @@ export default function FormCheckout(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Order Summary"
-              {...getOverrideProps(overrides, "Order Summaryukk")}
+              {...getOverrideProps(overrides, "Order Summary29767045")}
             ></Text>
             <Text
               fontFamily="Inter"
@@ -277,7 +277,7 @@ export default function FormCheckout(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Black"
-              {...getOverrideProps(overrides, "Blackmvd")}
+              {...getOverrideProps(overrides, "Black29767046")}
             ></Text>
             <Text
               fontFamily="Inter"
@@ -298,7 +298,7 @@ export default function FormCheckout(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Basic Tee"
-              {...getOverrideProps(overrides, "Basic Teexbp")}
+              {...getOverrideProps(overrides, "Basic Tee29767047")}
             ></Text>
             <Text
               fontFamily="Inter"
@@ -319,7 +319,7 @@ export default function FormCheckout(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Large"
-              {...getOverrideProps(overrides, "Largenfe")}
+              {...getOverrideProps(overrides, "Large29767048")}
             ></Text>
             <MyIcon
               position="absolute"
@@ -330,7 +330,7 @@ export default function FormCheckout(props) {
               overflow="hidden"
               padding="0px 0px 0px 0px"
               type="delete"
-              {...getOverrideProps(overrides, "MyIconyxg")}
+              {...getOverrideProps(overrides, "MyIcon29767049")}
             ></MyIcon>
             <SelectField
               display="flex"
@@ -349,7 +349,7 @@ export default function FormCheckout(props) {
               isDisabled={false}
               labelHidden={true}
               variation="default"
-              {...getOverrideProps(overrides, "SelectFieldctm")}
+              {...getOverrideProps(overrides, "SelectField29767050")}
             ></SelectField>
           </View>
           <Divider
@@ -361,7 +361,7 @@ export default function FormCheckout(props) {
             padding="0px 0px 0px 0px"
             size="small"
             orientation="horizontal"
-            {...getOverrideProps(overrides, "Dividerlfi")}
+            {...getOverrideProps(overrides, "Divider29767051")}
           ></Divider>
           <View
             padding="0px 0px 0px 0px"
@@ -528,7 +528,7 @@ export default function FormCheckout(props) {
             padding="0px 0px 0px 0px"
             size="small"
             orientation="horizontal"
-            {...getOverrideProps(overrides, "Dividernww")}
+            {...getOverrideProps(overrides, "Divider29767061")}
           ></Divider>
           <View
             padding="0px 0px 0px 0px"
@@ -589,7 +589,7 @@ export default function FormCheckout(props) {
             padding="0px 0px 0px 0px"
             size="small"
             orientation="horizontal"
-            {...getOverrideProps(overrides, "Dividerboz")}
+            {...getOverrideProps(overrides, "Divider29767065")}
           ></Divider>
           <Button
             display="flex"
@@ -603,10 +603,6 @@ export default function FormCheckout(props) {
             width="405px"
             justifyContent="center"
             alignItems="center"
-            border="1px SOLID rgba(0,0,0,0)"
-            borderRadius="4px"
-            padding="7px 15px 7px 15px"
-            backgroundColor="rgba(4,125,149,1)"
             size="large"
             isDisabled={false}
             variation="primary"
@@ -631,7 +627,7 @@ export default function FormCheckout(props) {
               overflow="hidden"
               padding="0px 0px 0px 0px"
               type="shopping_bag"
-              {...getOverrideProps(overrides, "MyIcongqs")}
+              {...getOverrideProps(overrides, "MyIcon29767068")}
             ></MyIcon>
             <Text
               fontFamily="Inter"
@@ -686,7 +682,6 @@ export default function FormCheckout(props) {
             alignItems="center"
             borderRadius="99px"
             padding="8px 12px 8px 12px"
-            backgroundColor="rgba(214,245,219,1)"
             color="rgba(54,94,61,1)"
             fontFamily="Inter"
             fontWeight="700"
