@@ -9,11 +9,9 @@ import React from "react";
 import {
   getOverrideProps,
   useDataStoreUpdateAction,
-  useNavigateAction,
   useStateMutationAction,
 } from "@aws-amplify/ui-react/internal";
 import { Streaming } from "../models";
-import { useEffect } from "react";
 import {
   Button,
   Divider,
@@ -23,53 +21,32 @@ import {
   TextField,
   View,
 } from "@aws-amplify/ui-react";
-export default function Edit1(props) {
+export default function Streaming6(props) {
   const { streaming, overrides, ...rest } = props;
   const [
-    textFieldThreeZeroNineFiveThreeThreeFourNineValue,
-    setTextFieldThreeZeroNineFiveThreeThreeFourNineValue,
+    textFieldThreeOneFourSixThreeOneFourZeroValue,
+    setTextFieldThreeOneFourSixThreeOneFourZeroValue,
   ] = useStateMutationAction("");
   const [
-    textFieldThreeZeroNineFiveThreeThreeFourEightValue,
-    setTextFieldThreeZeroNineFiveThreeThreeFourEightValue,
+    textFieldThreeOneFourSixThreeOneThreeNineValue,
+    setTextFieldThreeOneFourSixThreeOneThreeNineValue,
   ] = useStateMutationAction("");
   const [stepperFieldValue, setStepperFieldValue] =
     useStateMutationAction(undefined);
+  const [
+    textFieldThreeOneFourSixThreeOneFourTwoValue,
+    setTextFieldThreeOneFourSixThreeOneFourTwoValue,
+  ] = useStateMutationAction("");
   const buttonOnClick = useDataStoreUpdateAction({
     fields: {
-      Artist: textFieldThreeZeroNineFiveThreeThreeFourNineValue,
-      Song: textFieldThreeZeroNineFiveThreeThreeFourEightValue,
+      Artist: textFieldThreeOneFourSixThreeOneFourZeroValue,
+      Song: textFieldThreeOneFourSixThreeOneThreeNineValue,
       StreamingCount: stepperFieldValue,
-      ArtistPic: textFieldThreeZeroNineFiveThreeThreeFourEightValue,
+      ArtistPic: textFieldThreeOneFourSixThreeOneFourTwoValue,
     },
     id: streaming?.id,
     model: Streaming,
   });
-  const buttonOnMouseOut = useNavigateAction({ type: "url", url: "/details" });
-  useEffect(() => {
-    if (
-      textFieldThreeZeroNineFiveThreeThreeFourNineValue === "" &&
-      streaming !== undefined &&
-      streaming?.Artist !== undefined
-    )
-      setTextFieldThreeZeroNineFiveThreeThreeFourNineValue(streaming?.Artist);
-  }, [streaming]);
-  useEffect(() => {
-    if (
-      textFieldThreeZeroNineFiveThreeThreeFourEightValue === "" &&
-      streaming !== undefined &&
-      streaming?.Song !== undefined
-    )
-      setTextFieldThreeZeroNineFiveThreeThreeFourEightValue(streaming?.Song);
-  }, [streaming]);
-  useEffect(() => {
-    if (
-      stepperFieldValue === undefined &&
-      streaming !== undefined &&
-      streaming?.StreamingCount !== undefined
-    )
-      setStepperFieldValue(streaming?.StreamingCount);
-  }, [streaming]);
   return (
     <Flex
       gap="16px"
@@ -79,7 +56,7 @@ export default function Edit1(props) {
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
       {...rest}
-      {...getOverrideProps(overrides, "Edit1")}
+      {...getOverrideProps(overrides, "Streaming6")}
     >
       <Flex
         gap="24px"
@@ -140,7 +117,7 @@ export default function Edit1(props) {
           padding="0px 0px 0px 0px"
           size="small"
           orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider30953342")}
+          {...getOverrideProps(overrides, "Divider31463133")}
         ></Divider>
         <Divider
           height="1px"
@@ -151,7 +128,7 @@ export default function Edit1(props) {
           padding="0px 0px 0px 0px"
           size="small"
           orientation="horizontal"
-          {...getOverrideProps(overrides, "Divider30953346")}
+          {...getOverrideProps(overrides, "Divider31463137")}
         ></Divider>
         <Flex
           gap="16px"
@@ -179,13 +156,13 @@ export default function Edit1(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            value={textFieldThreeZeroNineFiveThreeThreeFourEightValue}
+            value={textFieldThreeOneFourSixThreeOneThreeNineValue}
             onChange={(event) => {
-              setTextFieldThreeZeroNineFiveThreeThreeFourEightValue(
+              setTextFieldThreeOneFourSixThreeOneThreeNineValue(
                 event.target.value
               );
             }}
-            {...getOverrideProps(overrides, "TextField30953348")}
+            {...getOverrideProps(overrides, "TextField31463139")}
           ></TextField>
           <TextField
             display="flex"
@@ -203,13 +180,13 @@ export default function Edit1(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            value={textFieldThreeZeroNineFiveThreeThreeFourNineValue}
+            value={textFieldThreeOneFourSixThreeOneFourZeroValue}
             onChange={(event) => {
-              setTextFieldThreeZeroNineFiveThreeThreeFourNineValue(
+              setTextFieldThreeOneFourSixThreeOneFourZeroValue(
                 event.target.value
               );
             }}
-            {...getOverrideProps(overrides, "TextField30953349")}
+            {...getOverrideProps(overrides, "TextField31463140")}
           ></TextField>
           <StepperField
             display="flex"
@@ -238,16 +215,21 @@ export default function Edit1(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             label="Artist Picture"
-            placeholder="www.url.com"
+            placeholder="Seattle, WA"
             size="default"
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            value={streaming?.ArtistPic}
-            {...getOverrideProps(overrides, "TextField30953351")}
+            value={textFieldThreeOneFourSixThreeOneFourTwoValue}
+            onChange={(event) => {
+              setTextFieldThreeOneFourSixThreeOneFourTwoValue(
+                event.target.value
+              );
+            }}
+            {...getOverrideProps(overrides, "TextField31463142")}
           ></TextField>
           <TextField
-            display="none"
+            display="flex"
             gap="8px"
             direction="column"
             justifyContent="center"
@@ -261,7 +243,7 @@ export default function Edit1(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            {...getOverrideProps(overrides, "TextField30953352")}
+            {...getOverrideProps(overrides, "TextField31463143")}
           ></TextField>
         </Flex>
         <Button
@@ -279,9 +261,6 @@ export default function Edit1(props) {
           children="Edit"
           onClick={() => {
             buttonOnClick();
-          }}
-          onMouseOut={() => {
-            buttonOnMouseOut();
           }}
           {...getOverrideProps(overrides, "Button")}
         ></Button>

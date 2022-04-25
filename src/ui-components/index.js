@@ -6,11 +6,13 @@
 
 export { default as Testing } from "./Testing";
 export { default as HeroLayout3 } from "./HeroLayout3";
+export { default as PageSelect } from "./PageSelect";
 export { default as CardA } from "./CardA";
 export { default as MarketingPricing } from "./MarketingPricing";
 export { default as MyCar } from "./MyCar";
 export { default as Edit1 } from "./Edit1";
 export { default as FormCheckout } from "./FormCheckout";
+export { default as Streaming6 } from "./Streaming6";
 export { default as SocialA } from "./SocialA";
 export { default as CardE } from "./CardE";
 export { default as DeletePage } from "./DeletePage";

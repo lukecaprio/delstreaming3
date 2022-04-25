@@ -24,7 +24,7 @@ export default function CardFE(props) {
   const { streaming, overrides, ...rest } = props;
   const badgeThreeZeroNineFourTwoNineSevenEightOnClick = useNavigateAction({
     type: "url",
-    url: "/edit",
+    url: `${"/edit/"}${streaming?.id}`,
   });
   const badgeThreeZeroNineFourTwoNineSevenNineOnClick = useNavigateAction({
     type: "url",

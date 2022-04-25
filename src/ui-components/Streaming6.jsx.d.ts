@@ -6,8 +6,11 @@
 
 import React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
+import { Streaming } from "../models";
 import { FlexProps } from "@aws-amplify/ui-react";
-export declare type DeletePageProps = React.PropsWithChildren<Partial<FlexProps> & {
+export declare type Streaming6Props = React.PropsWithChildren<Partial<FlexProps> & {
+    streaming?: Streaming;
+} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function DeletePage(props: DeletePageProps): React.ReactElement;
+export default function Streaming6(props: Streaming6Props): React.ReactElement;

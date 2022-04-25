@@ -18,7 +18,7 @@ class App extends Component {
             <Route exact path='/add' element={<AddStream/>} />
             <Route exact path='/Streams' element={<Streams/>} />
             <Route exact path='/details' element={<Details/>} />
-            <Route exact path='/edit' element={<Edit/>} />
+            <Route exact path='/edit/:sid' element={<Edit/>} />
             <Route exact path='/delete' element={<Delete/>} />
           </Routes>
 

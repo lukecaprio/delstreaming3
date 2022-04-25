@@ -7,7 +7,7 @@
 import React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
-export declare type DeletePageProps = React.PropsWithChildren<Partial<FlexProps> & {
+export declare type PageSelectProps = React.PropsWithChildren<Partial<FlexProps> & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function DeletePage(props: DeletePageProps): React.ReactElement;
+export default function PageSelect(props: PageSelectProps): React.ReactElement;
