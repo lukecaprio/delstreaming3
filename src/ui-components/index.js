@@ -25,6 +25,7 @@ export { default as Features2x3 } from "./Features2x3";
 export { default as Streaming5 } from "./Streaming5";
 export { default as MyIcon } from "./MyIcon";
 export { default as SocialB } from "./SocialB";
+export { default as Streaming7 } from "./Streaming7";
 export { default as ContactUs } from "./ContactUs";
 export { default as HeroLayout4 } from "./HeroLayout4";
 export { default as StreamONE } from "./StreamONE";

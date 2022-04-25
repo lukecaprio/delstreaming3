@@ -28,7 +28,7 @@ export default function CardFE(props) {
   });
   const badgeThreeZeroNineFourTwoNineSevenNineOnClick = useNavigateAction({
     type: "url",
-    url: "/delete",
+    url: `${"/delete/"}${streaming?.id}`,
   });
   return (
     <Flex

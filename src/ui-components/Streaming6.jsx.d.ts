@@ -5,8 +5,8 @@
  **************************************************************************/
 
 import React from "react";
-import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { Streaming } from "../models";
+import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type Streaming6Props = React.PropsWithChildren<Partial<FlexProps> & {
     streaming?: Streaming;

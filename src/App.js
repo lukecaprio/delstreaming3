@@ -19,7 +19,7 @@ class App extends Component {
             <Route exact path='/Streams' element={<Streams/>} />
             <Route exact path='/details' element={<Details/>} />
             <Route exact path='/edit/:sid' element={<Edit/>} />
-            <Route exact path='/delete' element={<Delete/>} />
+            <Route exact path='/delete/:did' element={<Delete/>} />
           </Routes>
 
       </div>

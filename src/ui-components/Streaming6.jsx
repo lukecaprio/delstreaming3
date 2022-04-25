@@ -6,12 +6,7 @@
 
 /* eslint-disable */
 import React from "react";
-import {
-  getOverrideProps,
-  useDataStoreUpdateAction,
-  useStateMutationAction,
-} from "@aws-amplify/ui-react/internal";
-import { Streaming } from "../models";
+import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import {
   Button,
   Divider,
@@ -23,30 +18,6 @@ import {
 } from "@aws-amplify/ui-react";
 export default function Streaming6(props) {
   const { streaming, overrides, ...rest } = props;
-  const [
-    textFieldThreeOneFourSixThreeOneFourZeroValue,
-    setTextFieldThreeOneFourSixThreeOneFourZeroValue,
-  ] = useStateMutationAction("");
-  const [
-    textFieldThreeOneFourSixThreeOneThreeNineValue,
-    setTextFieldThreeOneFourSixThreeOneThreeNineValue,
-  ] = useStateMutationAction("");
-  const [stepperFieldValue, setStepperFieldValue] =
-    useStateMutationAction(undefined);
-  const [
-    textFieldThreeOneFourSixThreeOneFourTwoValue,
-    setTextFieldThreeOneFourSixThreeOneFourTwoValue,
-  ] = useStateMutationAction("");
-  const buttonOnClick = useDataStoreUpdateAction({
-    fields: {
-      Artist: textFieldThreeOneFourSixThreeOneFourZeroValue,
-      Song: textFieldThreeOneFourSixThreeOneThreeNineValue,
-      StreamingCount: stepperFieldValue,
-      ArtistPic: textFieldThreeOneFourSixThreeOneFourTwoValue,
-    },
-    id: streaming?.id,
-    model: Streaming,
-  });
   return (
     <Flex
       gap="16px"
@@ -156,12 +127,6 @@ export default function Streaming6(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            value={textFieldThreeOneFourSixThreeOneThreeNineValue}
-            onChange={(event) => {
-              setTextFieldThreeOneFourSixThreeOneThreeNineValue(
-                event.target.value
-              );
-            }}
             {...getOverrideProps(overrides, "TextField31463139")}
           ></TextField>
           <TextField
@@ -180,12 +145,6 @@ export default function Streaming6(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            value={textFieldThreeOneFourSixThreeOneFourZeroValue}
-            onChange={(event) => {
-              setTextFieldThreeOneFourSixThreeOneFourZeroValue(
-                event.target.value
-              );
-            }}
             {...getOverrideProps(overrides, "TextField31463140")}
           ></TextField>
           <StepperField
@@ -200,8 +159,6 @@ export default function Streaming6(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            value={stepperFieldValue}
-            onStepChange={(value) => setStepperFieldValue(value)}
             {...getOverrideProps(overrides, "StepperField")}
           ></StepperField>
           <TextField
@@ -220,12 +177,6 @@ export default function Streaming6(props) {
             isDisabled={false}
             labelHidden={false}
             variation="default"
-            value={textFieldThreeOneFourSixThreeOneFourTwoValue}
-            onChange={(event) => {
-              setTextFieldThreeOneFourSixThreeOneFourTwoValue(
-                event.target.value
-              );
-            }}
             {...getOverrideProps(overrides, "TextField31463142")}
           ></TextField>
           <TextField
@@ -259,9 +210,6 @@ export default function Streaming6(props) {
           isDisabled={false}
           variation="primary"
           children="Edit"
-          onClick={() => {
-            buttonOnClick();
-          }}
           {...getOverrideProps(overrides, "Button")}
         ></Button>
       </Flex>

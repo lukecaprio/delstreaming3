@@ -6,10 +6,18 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useDataStoreDeleteAction,
+} from "@aws-amplify/ui-react/internal";
+import { Streaming } from "../models";
 import { Button, Flex, Text } from "@aws-amplify/ui-react";
 export default function DeletePage(props) {
-  const { overrides, ...rest } = props;
+  const { streaming, overrides, ...rest } = props;
+  const buttonOnClick = useDataStoreDeleteAction({
+    id: streaming?.id,
+    model: Streaming,
+  });
   return (
     <Flex
       gap="10px"
@@ -98,6 +106,9 @@ export default function DeletePage(props) {
             isDisabled={false}
             variation="primary"
             children="Delete"
+            onClick={() => {
+              buttonOnClick();
+            }}
             {...getOverrideProps(overrides, "Button")}
           ></Button>
         </Flex>
